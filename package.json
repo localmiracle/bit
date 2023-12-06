@@ -1,0 +1,17 @@
+{
+  "name": "bitcoin-price-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build:docker": "docker build -t bitcoin-price-tracker .",
+    "build": "nuxt build"
+  },
+  "dependencies": {
+    "nuxt": "^3.8.2",
+    "vue-chartjs": "^5.2.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-module": "^4.1.0"
+  }
+}

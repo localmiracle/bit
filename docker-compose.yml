@@ -1,0 +1,18 @@
+version: '3'
+services:
+  frontend:
+    build: ./bitcoin-price-tracker
+    ports:
+      - '3000:3000'
+  backend:
+    build: ./server
+    ports:
+      - '3001:3001'
+    depends_on:
+      - frontend
+    environment:
+      - MONGO_DB=mongodb://mongo:27017/bitcoin_price_tracker
+  mongo:
+    image: 'mongo'
+    ports:
+      - '27017:27017'

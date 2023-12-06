@@ -1,0 +1,6 @@
+{
+    "scripts": {
+      "build:docker": "docker build -t bitcoin-price-tracker-server ."
+    }
+  }
+  
